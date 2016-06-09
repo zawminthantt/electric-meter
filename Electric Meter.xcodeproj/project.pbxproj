@@ -14,6 +14,8 @@
 		CCD554461D09B5B000CFA4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */; };
 		CCD554511D09B5B100CFA4C7 /* Electric_MeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD554501D09B5B100CFA4C7 /* Electric_MeterTests.swift */; };
 		CCD5545C1D09B5B100CFA4C7 /* Electric_MeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */; };
+		CCD554781D09B66700CFA4C7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554711D09B65700CFA4C7 /* Charts.framework */; };
+		CCD554791D09B66700CFA4C7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554711D09B65700CFA4C7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,56 @@
 			remoteGlobalIDString = CCD554371D09B5B000CFA4C7;
 			remoteInfo = "Electric Meter";
 		};
+		CCD554701D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		CCD554721D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		CCD554741D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		CCD554761D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		CCD5547A1D09B66700CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCD5547C1D09B66700CFA4C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCD554791D09B66700CFA4C7 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CCD554381D09B5B000CFA4C7 /* Electric Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electric Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +98,7 @@
 		CCD554571D09B5B100CFA4C7 /* Electric MeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electric MeterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_MeterUITests.swift; sourceTree = "<group>"; };
 		CCD5545D1D09B5B100CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD554781D09B66700CFA4C7 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +134,7 @@
 				CCD5544F1D09B5B100CFA4C7 /* Electric MeterTests */,
 				CCD5545A1D09B5B100CFA4C7 /* Electric MeterUITests */,
 				CCD554391D09B5B000CFA4C7 /* Products */,
+				CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +179,17 @@
 			path = "Electric MeterUITests";
 			sourceTree = "<group>";
 		};
+		CCD5546A1D09B65700CFA4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD554711D09B65700CFA4C7 /* Charts.framework */,
+				CCD554731D09B65700CFA4C7 /* Charts.framework */,
+				CCD554751D09B65700CFA4C7 /* Charts.framework */,
+				CCD554771D09B65700CFA4C7 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +200,12 @@
 				CCD554341D09B5B000CFA4C7 /* Sources */,
 				CCD554351D09B5B000CFA4C7 /* Frameworks */,
 				CCD554361D09B5B000CFA4C7 /* Resources */,
+				CCD5547C1D09B66700CFA4C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCD5547B1D09B66700CFA4C7 /* PBXTargetDependency */,
 			);
 			name = "Electric Meter";
 			productName = "Electric Meter";
@@ -193,7 +260,6 @@
 				TargetAttributes = {
 					CCD554371D09B5B000CFA4C7 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = GPA9HN528J;
 					};
 					CCD5544B1D09B5B000CFA4C7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -218,6 +284,12 @@
 			mainGroup = CCD5542F1D09B5B000CFA4C7;
 			productRefGroup = CCD554391D09B5B000CFA4C7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCD5546A1D09B65700CFA4C7 /* Products */;
+					ProjectRef = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CCD554371D09B5B000CFA4C7 /* Electric Meter */,
@@ -226,6 +298,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CCD554711D09B65700CFA4C7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CCD554701D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCD554731D09B65700CFA4C7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CCD554721D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCD554751D09B65700CFA4C7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CCD554741D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCD554771D09B65700CFA4C7 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = CCD554761D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CCD554361D09B5B000CFA4C7 /* Resources */ = {
@@ -292,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = CCD554371D09B5B000CFA4C7 /* Electric Meter */;
 			targetProxy = CCD554581D09B5B100CFA4C7 /* PBXContainerItemProxy */;
+		};
+		CCD5547B1D09B66700CFA4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = CCD5547A1D09B66700CFA4C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -402,7 +510,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Electric Meter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,7 +524,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Electric Meter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
