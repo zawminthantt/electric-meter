@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCD5543C1D09B5B000CFA4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */; };
+		CCD5543E1D09B5B000CFA4C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */; };
+		CCD554411D09B5B000CFA4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD5543F1D09B5B000CFA4C7 /* Main.storyboard */; };
+		CCD554431D09B5B000CFA4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD554421D09B5B000CFA4C7 /* Assets.xcassets */; };
+		CCD554461D09B5B000CFA4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */; };
+		CCD554511D09B5B100CFA4C7 /* Electric_MeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD554501D09B5B100CFA4C7 /* Electric_MeterTests.swift */; };
+		CCD5545C1D09B5B100CFA4C7 /* Electric_MeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCD5544D1D09B5B100CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554301D09B5B000CFA4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCD554371D09B5B000CFA4C7;
+			remoteInfo = "Electric Meter";
+		};
+		CCD554581D09B5B100CFA4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD554301D09B5B000CFA4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCD554371D09B5B000CFA4C7;
+			remoteInfo = "Electric Meter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCD554381D09B5B000CFA4C7 /* Electric Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electric Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCD554401D09B5B000CFA4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCD554421D09B5B000CFA4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD554451D09B5B000CFA4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCD554471D09B5B000CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD5544C1D09B5B000CFA4C7 /* Electric MeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electric MeterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD554501D09B5B100CFA4C7 /* Electric_MeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_MeterTests.swift; sourceTree = "<group>"; };
+		CCD554521D09B5B100CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD554571D09B5B100CFA4C7 /* Electric MeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electric MeterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_MeterUITests.swift; sourceTree = "<group>"; };
+		CCD5545D1D09B5B100CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCD554351D09B5B000CFA4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD554491D09B5B000CFA4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD554541D09B5B100CFA4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCD5542F1D09B5B000CFA4C7 = {
+			isa = PBXGroup;
+			children = (
+				CCD5543A1D09B5B000CFA4C7 /* Electric Meter */,
+				CCD5544F1D09B5B100CFA4C7 /* Electric MeterTests */,
+				CCD5545A1D09B5B100CFA4C7 /* Electric MeterUITests */,
+				CCD554391D09B5B000CFA4C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCD554391D09B5B000CFA4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD554381D09B5B000CFA4C7 /* Electric Meter.app */,
+				CCD5544C1D09B5B000CFA4C7 /* Electric MeterTests.xctest */,
+				CCD554571D09B5B100CFA4C7 /* Electric MeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD5543A1D09B5B000CFA4C7 /* Electric Meter */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */,
+				CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */,
+				CCD5543F1D09B5B000CFA4C7 /* Main.storyboard */,
+				CCD554421D09B5B000CFA4C7 /* Assets.xcassets */,
+				CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */,
+				CCD554471D09B5B000CFA4C7 /* Info.plist */,
+			);
+			path = "Electric Meter";
+			sourceTree = "<group>";
+		};
+		CCD5544F1D09B5B100CFA4C7 /* Electric MeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCD554501D09B5B100CFA4C7 /* Electric_MeterTests.swift */,
+				CCD554521D09B5B100CFA4C7 /* Info.plist */,
+			);
+			path = "Electric MeterTests";
+			sourceTree = "<group>";
+		};
+		CCD5545A1D09B5B100CFA4C7 /* Electric MeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */,
+				CCD5545D1D09B5B100CFA4C7 /* Info.plist */,
+			);
+			path = "Electric MeterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCD554371D09B5B000CFA4C7 /* Electric Meter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD554601D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric Meter" */;
+			buildPhases = (
+				CCD554341D09B5B000CFA4C7 /* Sources */,
+				CCD554351D09B5B000CFA4C7 /* Frameworks */,
+				CCD554361D09B5B000CFA4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Electric Meter";
+			productName = "Electric Meter";
+			productReference = CCD554381D09B5B000CFA4C7 /* Electric Meter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCD5544B1D09B5B000CFA4C7 /* Electric MeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD554631D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric MeterTests" */;
+			buildPhases = (
+				CCD554481D09B5B000CFA4C7 /* Sources */,
+				CCD554491D09B5B000CFA4C7 /* Frameworks */,
+				CCD5544A1D09B5B000CFA4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCD5544E1D09B5B100CFA4C7 /* PBXTargetDependency */,
+			);
+			name = "Electric MeterTests";
+			productName = "Electric MeterTests";
+			productReference = CCD5544C1D09B5B000CFA4C7 /* Electric MeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCD554561D09B5B100CFA4C7 /* Electric MeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD554661D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric MeterUITests" */;
+			buildPhases = (
+				CCD554531D09B5B100CFA4C7 /* Sources */,
+				CCD554541D09B5B100CFA4C7 /* Frameworks */,
+				CCD554551D09B5B100CFA4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCD554591D09B5B100CFA4C7 /* PBXTargetDependency */,
+			);
+			name = "Electric MeterUITests";
+			productName = "Electric MeterUITests";
+			productReference = CCD554571D09B5B100CFA4C7 /* Electric MeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCD554301D09B5B000CFA4C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Z.M.T;
+				TargetAttributes = {
+					CCD554371D09B5B000CFA4C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GPA9HN528J;
+					};
+					CCD5544B1D09B5B000CFA4C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GPA9HN528J;
+						TestTargetID = CCD554371D09B5B000CFA4C7;
+					};
+					CCD554561D09B5B100CFA4C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GPA9HN528J;
+						TestTargetID = CCD554371D09B5B000CFA4C7;
+					};
+				};
+			};
+			buildConfigurationList = CCD554331D09B5B000CFA4C7 /* Build configuration list for PBXProject "Electric Meter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCD5542F1D09B5B000CFA4C7;
+			productRefGroup = CCD554391D09B5B000CFA4C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCD554371D09B5B000CFA4C7 /* Electric Meter */,
+				CCD5544B1D09B5B000CFA4C7 /* Electric MeterTests */,
+				CCD554561D09B5B100CFA4C7 /* Electric MeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCD554361D09B5B000CFA4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD554461D09B5B000CFA4C7 /* LaunchScreen.storyboard in Resources */,
+				CCD554431D09B5B000CFA4C7 /* Assets.xcassets in Resources */,
+				CCD554411D09B5B000CFA4C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD5544A1D09B5B000CFA4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD554551D09B5B100CFA4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCD554341D09B5B000CFA4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD5543E1D09B5B000CFA4C7 /* ViewController.swift in Sources */,
+				CCD5543C1D09B5B000CFA4C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD554481D09B5B000CFA4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD554511D09B5B100CFA4C7 /* Electric_MeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD554531D09B5B100CFA4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD5545C1D09B5B100CFA4C7 /* Electric_MeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCD5544E1D09B5B100CFA4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCD554371D09B5B000CFA4C7 /* Electric Meter */;
+			targetProxy = CCD5544D1D09B5B100CFA4C7 /* PBXContainerItemProxy */;
+		};
+		CCD554591D09B5B100CFA4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCD554371D09B5B000CFA4C7 /* Electric Meter */;
+			targetProxy = CCD554581D09B5B100CFA4C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCD5543F1D09B5B000CFA4C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD554401D09B5B000CFA4C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD554451D09B5B000CFA4C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCD5545E1D09B5B100CFA4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCD5545F1D09B5B100CFA4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCD554611D09B5B100CFA4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Electric Meter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCD554621D09B5B100CFA4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Electric Meter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCD554641D09B5B100CFA4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Electric MeterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-MeterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electric Meter.app/Electric Meter";
+			};
+			name = Debug;
+		};
+		CCD554651D09B5B100CFA4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Electric MeterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-MeterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electric Meter.app/Electric Meter";
+			};
+			name = Release;
+		};
+		CCD554671D09B5B100CFA4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Electric MeterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-MeterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Electric Meter";
+			};
+			name = Debug;
+		};
+		CCD554681D09B5B100CFA4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Electric MeterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-MeterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Electric Meter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCD554331D09B5B000CFA4C7 /* Build configuration list for PBXProject "Electric Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD5545E1D09B5B100CFA4C7 /* Debug */,
+				CCD5545F1D09B5B100CFA4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD554601D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD554611D09B5B100CFA4C7 /* Debug */,
+				CCD554621D09B5B100CFA4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCD554631D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric MeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD554641D09B5B100CFA4C7 /* Debug */,
+				CCD554651D09B5B100CFA4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCD554661D09B5B100CFA4C7 /* Build configuration list for PBXNativeTarget "Electric MeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD554671D09B5B100CFA4C7 /* Debug */,
+				CCD554681D09B5B100CFA4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCD554301D09B5B000CFA4C7 /* Project object */;
+}
