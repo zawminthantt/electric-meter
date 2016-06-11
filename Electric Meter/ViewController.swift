@@ -106,7 +106,7 @@ class ViewController: UIViewController {
                             
                             var frequencies = [BarChartDataEntry]()
                             var currents = [BarChartDataEntry]()
-//                            var powers = [BarChartDataEntry]()
+                            var powers = [BarChartDataEntry]()
                             var voltages = [BarChartDataEntry]()
                             var xArray = [String]()
                             
@@ -121,9 +121,9 @@ class ViewController: UIViewController {
                                     currents.append(BarChartDataEntry(value: (current?.doubleValue)!, xIndex: i))
                                 }
                                 
-//                                if let power = dict["power"] {
-//                                    powers.append(BarChartDataEntry(value: (power?.doubleValue)!, xIndex: i))
-//                                }
+                                if let power = dict["power"] {
+                                    powers.append(BarChartDataEntry(value: (power?.doubleValue)!, xIndex: i))
+                                }
                                 
                                 if let voltage = dict["voltage"] {
                                     voltages.append(BarChartDataEntry(value: (voltage?.doubleValue)!, xIndex: i))
@@ -138,15 +138,15 @@ class ViewController: UIViewController {
                             frequencyDataSet.setColor(UIColor.blueColor())
                             let voltageDataSet = BarChartDataSet(yVals: voltages, label: "Voltage")
                             voltageDataSet.setColor(UIColor.greenColor())
-//                            let powerDataSet = BarChartDataSet(yVals: powers, label: "Power")
-//                            powerDataSet.setColor(UIColor.redColor())
+                            let powerDataSet = BarChartDataSet(yVals: powers, label: "Power")
+                            powerDataSet.setColor(UIColor.redColor())
                             let currentDataSet = BarChartDataSet(yVals: currents, label: "Current")
-                            currentDataSet.setColor(UIColor.redColor())
+                            currentDataSet.setColor(UIColor.blackColor())
                             
-                            let dataSets = [frequencyDataSet, voltageDataSet, currentDataSet]
+                            let dataSets = [frequencyDataSet, voltageDataSet, currentDataSet, powerDataSet]
                             
                             let chartData = BarChartData(xVals: xArray, dataSets: dataSets)
-                            self.setChartDataCount(chartData)
+                            self.setChartData(chartData)
                         }
                         
                         dispatch_async(dispatch_get_main_queue(), {
@@ -158,7 +158,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func setChartDataCount(chartData: BarChartData) {
+    func setChartData(chartData: BarChartData) {
         dispatch_async(dispatch_get_main_queue()) { 
             self.barChartView.data = chartData
         }

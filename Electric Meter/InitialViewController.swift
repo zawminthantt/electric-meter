@@ -88,7 +88,6 @@ class InitialViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func pickADeviceLocation(sender: UIButton) {
        locationsPickerView.hidden = false
-//        self.view.bringSubviewToFront(locationsPickerView)
     }
     
     // MARK: - PickerView
@@ -123,6 +122,8 @@ class InitialViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         }
     }
     
+    // MARK: - Datepicker
+    
     @IBAction func datePicker(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -135,6 +136,8 @@ class InitialViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             toDateButton.setTitle(dateFormatter.stringFromDate(sender.date), forState: .Normal)
         }
     }
+    
+    // MARK: - Button actions
     
     @IBAction func selectADate(sender: UIButton) {
         isDatePickerShown = !isDatePickerShown
@@ -150,7 +153,7 @@ class InitialViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func viewGraph(sender: UIButton) {
         if (locationButton.currentTitle! == "Select Meter") {
-            print("Choose a meter!!!")
+            showAlert("MeterID is required", message: "Choose a MeterID that you would like to view.")
             return
         }
                 
@@ -174,5 +177,14 @@ class InitialViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             viewController.meterId = meterIDsList[locationsPickerView.selectedRowInComponent(1)]
             viewController.zipCode = zipCodes[locationsPickerView.selectedRowInComponent(0)]
         }
+    }
+    
+    // MARK: - Alert view
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC008D671D0C631E008C0646 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC008D601D0C630F008C0646 /* Charts.framework */; };
+		CC008D681D0C631E008C0646 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC008D601D0C630F008C0646 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCD5543C1D09B5B000CFA4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */; };
 		CCD5543E1D09B5B000CFA4C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */; };
 		CCD554411D09B5B000CFA4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD5543F1D09B5B000CFA4C7 /* Main.storyboard */; };
@@ -14,8 +16,6 @@
 		CCD554461D09B5B000CFA4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */; };
 		CCD554511D09B5B100CFA4C7 /* Electric_MeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD554501D09B5B100CFA4C7 /* Electric_MeterTests.swift */; };
 		CCD5545C1D09B5B100CFA4C7 /* Electric_MeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */; };
-		CCD554781D09B66700CFA4C7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554711D09B65700CFA4C7 /* Charts.framework */; };
-		CCD554791D09B66700CFA4C7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554711D09B65700CFA4C7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCD554CA1D09DE7800CFA4C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554BD1D09DE6400CFA4C7 /* Alamofire.framework */; };
 		CCD554CB1D09DE7800CFA4C7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554BD1D09DE6400CFA4C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCF8390E1D0BD466009F8D91 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8390D1D0BD466009F8D91 /* InitialViewController.swift */; };
@@ -23,6 +23,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CC008D5F1D0C630F008C0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		CC008D611D0C630F008C0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		CC008D631D0C630F008C0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		CC008D651D0C630F008C0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		CC008D691D0C631F008C0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 		CCD5544D1D09B5B100CFA4C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCD554301D09B5B000CFA4C7 /* Project object */;
@@ -36,41 +71,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CCD554371D09B5B000CFA4C7;
 			remoteInfo = "Electric Meter";
-		};
-		CCD554701D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
-		};
-		CCD554721D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
-			remoteInfo = "Charts-TV";
-		};
-		CCD554741D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
-			remoteInfo = "Charts-OSX";
-		};
-		CCD554761D09B65700CFA4C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
-			remoteInfo = ChartsTests;
-		};
-		CCD5547A1D09B66700CFA4C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
 		};
 		CCD554BC1D09DE6400CFA4C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -137,8 +137,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CCD554791D09B66700CFA4C7 /* Charts.framework in Embed Frameworks */,
 				CCD554CB1D09DE7800CFA4C7 /* Alamofire.framework in Embed Frameworks */,
+				CC008D681D0C631E008C0646 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC008D581D0C630F008C0646 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		CCD554381D09B5B000CFA4C7 /* Electric Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electric Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +160,6 @@
 		CCD554571D09B5B100CFA4C7 /* Electric MeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electric MeterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD5545B1D09B5B100CFA4C7 /* Electric_MeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_MeterUITests.swift; sourceTree = "<group>"; };
 		CCD5545D1D09B5B100CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		CCD554B21D09DE6400CFA4C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		CCF8390D1D0BD466009F8D91 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CCFD66E11D0B15BF00B4FCA4 /* Electric Meter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Electric Meter-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD554781D09B66700CFA4C7 /* Charts.framework in Frameworks */,
 				CCD554CA1D09DE7800CFA4C7 /* Alamofire.framework in Frameworks */,
+				CC008D671D0C631E008C0646 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +194,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC008D591D0C630F008C0646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC008D601D0C630F008C0646 /* Charts.framework */,
+				CC008D621D0C630F008C0646 /* Charts.framework */,
+				CC008D641D0C630F008C0646 /* Charts.framework */,
+				CC008D661D0C630F008C0646 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CCD5542F1D09B5B000CFA4C7 = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +213,8 @@
 				CCD5544F1D09B5B100CFA4C7 /* Electric MeterTests */,
 				CCD5545A1D09B5B100CFA4C7 /* Electric MeterUITests */,
 				CCD554391D09B5B000CFA4C7 /* Products */,
+				CC008D581D0C630F008C0646 /* Charts.xcodeproj */,
 				CCD554B21D09DE6400CFA4C7 /* Alamofire.xcodeproj */,
-				CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,17 +260,6 @@
 			path = "Electric MeterUITests";
 			sourceTree = "<group>";
 		};
-		CCD5546A1D09B65700CFA4C7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CCD554711D09B65700CFA4C7 /* Charts.framework */,
-				CCD554731D09B65700CFA4C7 /* Charts.framework */,
-				CCD554751D09B65700CFA4C7 /* Charts.framework */,
-				CCD554771D09B65700CFA4C7 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CCD554B31D09DE6400CFA4C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,8 +299,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				CCD5547B1D09B66700CFA4C7 /* PBXTargetDependency */,
 				CCD554CD1D09DE7800CFA4C7 /* PBXTargetDependency */,
+				CC008D6A1D0C631F008C0646 /* PBXTargetDependency */,
 			);
 			name = "Electric Meter";
 			productName = "Electric Meter";
@@ -385,8 +385,8 @@
 					ProjectRef = CCD554B21D09DE6400CFA4C7 /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = CCD5546A1D09B65700CFA4C7 /* Products */;
-					ProjectRef = CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */;
+					ProductGroup = CC008D591D0C630F008C0646 /* Products */;
+					ProjectRef = CC008D581D0C630F008C0646 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -399,32 +399,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CCD554711D09B65700CFA4C7 /* Charts.framework */ = {
+		CC008D601D0C630F008C0646 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = CCD554701D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			remoteRef = CC008D5F1D0C630F008C0646 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CCD554731D09B65700CFA4C7 /* Charts.framework */ = {
+		CC008D621D0C630F008C0646 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = CCD554721D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			remoteRef = CC008D611D0C630F008C0646 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CCD554751D09B65700CFA4C7 /* Charts.framework */ = {
+		CC008D641D0C630F008C0646 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = CCD554741D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			remoteRef = CC008D631D0C630F008C0646 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CCD554771D09B65700CFA4C7 /* ChartsTests.xctest */ = {
+		CC008D661D0C630F008C0646 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = CCD554761D09B65700CFA4C7 /* PBXContainerItemProxy */;
+			remoteRef = CC008D651D0C630F008C0646 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		CCD554BD1D09DE6400CFA4C7 /* Alamofire.framework */ = {
@@ -536,6 +536,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CC008D6A1D0C631F008C0646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = CC008D691D0C631F008C0646 /* PBXContainerItemProxy */;
+		};
 		CCD5544E1D09B5B100CFA4C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CCD554371D09B5B000CFA4C7 /* Electric Meter */;
@@ -545,11 +550,6 @@
 			isa = PBXTargetDependency;
 			target = CCD554371D09B5B000CFA4C7 /* Electric Meter */;
 			targetProxy = CCD554581D09B5B100CFA4C7 /* PBXContainerItemProxy */;
-		};
-		CCD5547B1D09B66700CFA4C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Charts-iOS";
-			targetProxy = CCD5547A1D09B66700CFA4C7 /* PBXContainerItemProxy */;
 		};
 		CCD554CD1D09DE7800CFA4C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
