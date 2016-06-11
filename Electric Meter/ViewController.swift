@@ -13,6 +13,13 @@ import Charts
 class ViewController: UIViewController {
 
     @IBOutlet weak var barChartView: BarChartView!
+    
+    var meterId: String!
+    var zipCode: String!
+    var fromDate: String!
+    var toDate: String!
+    
+    let baseURL = "http://eazydelivery.azurewebsites.net/pcm/svc/pcm/"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +30,33 @@ class ViewController: UIViewController {
         
         barChartView.descriptionText = ""
         barChartView.noDataTextDescription = "No data"
-        barChartView.setVisibleXRangeMaximum(10)
+        barChartView.maxVisibleValueCount = 60
+        
+        let xAxis = barChartView.xAxis
+        xAxis.drawGridLinesEnabled = false
+        xAxis.spaceBetweenLabels = 2
+        
+        let leftAxis = barChartView.leftAxis;
+        leftAxis.labelFont = UIFont.systemFontOfSize(10.0)
+        leftAxis.labelCount = 8;
+        leftAxis.labelPosition = .OutsideChart
+        leftAxis.spaceTop = 0.15;
+        leftAxis.axisMinValue = 0.0; // this replaces startAtZero = YES
+        
+        let rightAxis = barChartView.rightAxis;
+        rightAxis.enabled = true;
+        rightAxis.drawGridLinesEnabled = false;
+        rightAxis.labelFont = UIFont.systemFontOfSize(10.0)
+        rightAxis.labelCount = 8;
+        rightAxis.valueFormatter = leftAxis.valueFormatter;
+        rightAxis.spaceTop = 0.15;
+        rightAxis.axisMinValue = 0.0; // this replaces startAtZero = YES
+        
+//        barChartView.legend.position = .BelowChartLeft;
+//        _chartView.legend.form = ChartLegendFormSquare;
+//        _chartView.legend.formSize = 9.0;
+//        _chartView.legend.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f];
+//        _chartView.legend.xEntrySpace = 4.0;
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,14 +65,26 @@ class ViewController: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        let url = NSURL(string: "http://eazydelivery.azurewebsites.net/pcm/svc/pcm/searchHistory/")!
+        
+        var parameters = [String : String]()
+        parameters["meterId"] = meterId
+        parameters["zipCode"] = zipCode
+        
+        let url: NSURL!
+        
+        if (fromDate.characters.count <= 0
+            || toDate.characters.count <= 0) {
+            url = NSURL(string: baseURL + "/latestStatus/")
+        } else {
+            url = NSURL(string: baseURL + "/searchHistory/")
+            parameters["from"] = fromDate
+            parameters["to"] = toDate
+        }
+        
+        print("parameters => \(parameters)")
+        
         let mutableURLRequest = NSMutableURLRequest(URL: url)
         mutableURLRequest.HTTPMethod = "POST"
-        
-        let parameters = ["meterId" : "1",
-                          "locationId" : "1",
-                          "from" : "2016-06-05 23:59:05",
-                          "to" : "2016-06-08 23:59:05"]
         
         do {
             mutableURLRequest.HTTPBody = try NSJSONSerialization.dataWithJSONObject(parameters, options: NSJSONWritingOptions())
@@ -52,6 +97,7 @@ class ViewController: UIViewController {
         Alamofire.request(mutableURLRequest)
             .validate()
             .responseJSON { response in
+                print(response.request)
                 if let JSON = response.result.value as? [String : AnyObject] {
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                         print("JSON: \(JSON)")
@@ -95,7 +141,7 @@ class ViewController: UIViewController {
 //                            let powerDataSet = BarChartDataSet(yVals: powers, label: "Power")
 //                            powerDataSet.setColor(UIColor.redColor())
                             let currentDataSet = BarChartDataSet(yVals: currents, label: "Current")
-                            currentDataSet.setColor(UIColor.yellowColor())
+                            currentDataSet.setColor(UIColor.redColor())
                             
                             let dataSets = [frequencyDataSet, voltageDataSet, currentDataSet]
                             

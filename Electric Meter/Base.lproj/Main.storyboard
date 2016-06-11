@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g4o-Dl-14W">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="1lc-t7-CNu">
+            <objects>
+                <viewController id="L55-Fj-NBm" customClass="InitialViewController" customModule="Electric_Meter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qiL-GI-Qqf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Anv-jn-8QE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="18A-n0-cI9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RER-wk-aKc">
+                                <rect key="frame" x="20" y="72" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="RgU-cs-NhA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Select Meter"/>
+                                <connections>
+                                    <action selector="pickADeviceLocation:" destination="L55-Fj-NBm" eventType="touchUpInside" id="ZYk-qF-iey"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-yu-aD1">
+                                <rect key="frame" x="20" y="376" width="560" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="voX-sg-rJN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="L55-Fj-NBm" id="j4i-sE-Wb3"/>
+                                    <outlet property="delegate" destination="L55-Fj-NBm" id="nj0-OD-qfp"/>
+                                </connections>
+                            </pickerView>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-JY-5ml">
+                                <rect key="frame" x="20" y="376" width="560" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="FSf-MP-RaN"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="487327987.52402198">
+                                    <!--2016-06-11 08:53:07 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="L55-Fj-NBm" eventType="valueChanged" id="7vG-Ft-jQT"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zm-n9-hCr">
+                                <rect key="frame" x="20" y="536" width="560" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921568627447" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OdE-mO-z5E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewGraph:" destination="L55-Fj-NBm" eventType="touchUpInside" id="tYX-Di-8XB"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-5d-QLx">
+                                <rect key="frame" x="20" y="113" width="560" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-Y9-bqb">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="34"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="From"/>
+                                        <connections>
+                                            <action selector="selectADate:" destination="L55-Fj-NBm" eventType="touchUpInside" id="EKF-1L-hGU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnN-RG-HsC">
+                                        <rect key="frame" x="0.0" y="42" width="560" height="34"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="To"/>
+                                        <connections>
+                                            <action selector="selectADate:" destination="L55-Fj-NBm" eventType="touchUpInside" id="bYA-Kb-FLU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DnN-RG-HsC" firstAttribute="width" secondItem="nbM-Y9-bqb" secondAttribute="width" id="Hqf-jA-QqF"/>
+                                    <constraint firstItem="DnN-RG-HsC" firstAttribute="height" secondItem="nbM-Y9-bqb" secondAttribute="height" id="SYu-Vh-ts7"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xbt-JY-5ml" firstAttribute="leading" secondItem="18A-n0-cI9" secondAttribute="leadingMargin" id="1df-yB-WZ8"/>
+                            <constraint firstItem="2Zm-n9-hCr" firstAttribute="trailing" secondItem="18A-n0-cI9" secondAttribute="trailingMargin" id="CAR-8z-jwx"/>
+                            <constraint firstItem="Anv-jn-8QE" firstAttribute="top" secondItem="xbt-JY-5ml" secondAttribute="bottom" constant="8" id="FTc-GT-9ny"/>
+                            <constraint firstItem="8fr-5d-QLx" firstAttribute="top" secondItem="RER-wk-aKc" secondAttribute="bottom" constant="7" id="GSl-1W-f26"/>
+                            <constraint firstItem="2Zm-n9-hCr" firstAttribute="leading" secondItem="18A-n0-cI9" secondAttribute="leadingMargin" id="JIJ-pz-3Zx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xbt-JY-5ml" secondAttribute="trailing" id="OBm-Tq-YMa"/>
+                            <constraint firstItem="IxI-yu-aD1" firstAttribute="leading" secondItem="18A-n0-cI9" secondAttribute="leadingMargin" id="Rf2-hJ-Vrk"/>
+                            <constraint firstItem="RER-wk-aKc" firstAttribute="trailing" secondItem="18A-n0-cI9" secondAttribute="trailingMargin" id="THR-4N-LWf"/>
+                            <constraint firstItem="RER-wk-aKc" firstAttribute="top" secondItem="qiL-GI-Qqf" secondAttribute="bottom" constant="8" id="XLq-ai-MbG"/>
+                            <constraint firstItem="IxI-yu-aD1" firstAttribute="trailing" secondItem="18A-n0-cI9" secondAttribute="trailingMargin" id="Xc8-dr-L5L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8fr-5d-QLx" secondAttribute="trailing" id="awK-GQ-rn2"/>
+                            <constraint firstItem="Anv-jn-8QE" firstAttribute="top" secondItem="IxI-yu-aD1" secondAttribute="bottom" constant="8" id="bif-zl-Jez"/>
+                            <constraint firstItem="8fr-5d-QLx" firstAttribute="leading" secondItem="18A-n0-cI9" secondAttribute="leadingMargin" id="j9k-8E-Ytl"/>
+                            <constraint firstItem="RER-wk-aKc" firstAttribute="leading" secondItem="18A-n0-cI9" secondAttribute="leadingMargin" id="kxV-0q-hoN"/>
+                            <constraint firstItem="Anv-jn-8QE" firstAttribute="top" secondItem="2Zm-n9-hCr" secondAttribute="bottom" constant="20" id="ltC-2q-5RK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EHx-lX-j5t"/>
+                    <connections>
+                        <outlet property="datePicker" destination="xbt-JY-5ml" id="H3M-X4-Qd1"/>
+                        <outlet property="fromDateButton" destination="nbM-Y9-bqb" id="7Do-Zu-xoZ"/>
+                        <outlet property="locationButton" destination="RER-wk-aKc" id="fhM-1s-7Ud"/>
+                        <outlet property="locationsPickerView" destination="IxI-yu-aD1" id="Go8-bt-pzJ"/>
+                        <outlet property="toDateButton" destination="DnN-RG-HsC" id="iZ1-Gm-4fo"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showGraph" id="w5y-bZ-tWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfi-D4-Tf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="202"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="les-DY-e0Z" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="28" width="560" height="564"/>
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -37,7 +159,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="209"/>
+            <point key="canvasLocation" x="1137" y="209"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OtX-zO-NUB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g4o-Dl-14W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Svs-O8-kpA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L55-Fj-NBm" kind="relationship" relationship="rootViewController" id="kdx-Wr-oF9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIr-JP-VMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="202"/>
         </scene>
     </scenes>
 </document>

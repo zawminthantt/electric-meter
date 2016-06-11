@@ -18,6 +18,7 @@
 		CCD554791D09B66700CFA4C7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554711D09B65700CFA4C7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCD554CA1D09DE7800CFA4C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554BD1D09DE6400CFA4C7 /* Alamofire.framework */; };
 		CCD554CB1D09DE7800CFA4C7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCD554BD1D09DE6400CFA4C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCF8390E1D0BD466009F8D91 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8390D1D0BD466009F8D91 /* InitialViewController.swift */; };
 		CCFD66E41D0B15BF00B4FCA4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFD66E31D0B15BF00B4FCA4 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		CCD5545D1D09B5B100CFA4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD554691D09B65700CFA4C7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		CCD554B21D09DE6400CFA4C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		CCF8390D1D0BD466009F8D91 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CCFD66E11D0B15BF00B4FCA4 /* Electric Meter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Electric Meter-Bridging-Header.h"; sourceTree = "<group>"; };
 		CCFD66E21D0B15BF00B4FCA4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
 		CCFD66E31D0B15BF00B4FCA4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				CCD5543B1D09B5B000CFA4C7 /* AppDelegate.swift */,
 				CCD5543D1D09B5B000CFA4C7 /* ViewController.swift */,
+				CCF8390D1D0BD466009F8D91 /* InitialViewController.swift */,
 				CCD5543F1D09B5B000CFA4C7 /* Main.storyboard */,
 				CCD554421D09B5B000CFA4C7 /* Assets.xcassets */,
 				CCD554441D09B5B000CFA4C7 /* LaunchScreen.storyboard */,
@@ -510,6 +513,7 @@
 				CCD5543E1D09B5B000CFA4C7 /* ViewController.swift in Sources */,
 				CCFD66E41D0B15BF00B4FCA4 /* MBProgressHUD.m in Sources */,
 				CCD5543C1D09B5B000CFA4C7 /* AppDelegate.swift in Sources */,
+				CCF8390E1D0BD466009F8D91 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +669,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Electric Meter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -682,7 +686,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Electric Meter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zmt.Electric-Meter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
