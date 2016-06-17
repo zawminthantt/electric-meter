@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	<typeAlias alias="meter" type="com.pcm.dao.Meter" />
+	
+	<!-- Perform Insert Operation -->
+	<insert id="insertMeter" parameterClass="meter">
+		INSERT INTO
+			METER
+				( meter_id
+				, location_id
+				, create_date )
+			VALUES
+				( #meterId#
+				, #locationId#
+				, NOW() )
+	</insert>
+
+	<!-- Perform Read Operation -->
+	<select id="getMeterById" parameterClass="meter" resultClass="meter">
+		SELECT 
+			meter_id		meterId
+			, location_id	locationId
+			, create_date	createDate
+		FROM 
+			METER
+		WHERE
+			meter_id = #meterId#
+			AND
+			location_id = #locationId#
+	</select>
+	
+	<!-- Perform Read Operation -->
+	<select id="getMeterByLocationId" parameterClass="int" resultClass="meter">
+		SELECT 
+			meter_id		meterId
+			, location_id	locationId
+			, create_date	createDate
+		FROM 
+			METER
+		WHERE
+			location_id = #locationId#
+		ORDER BY
+			meter_id ASC
+	</select>
+	
+	<!-- Perform Read Operation -->
+	<select id="getAllMeter" resultClass="meter">
+		SELECT 
+			meter_id		meterId
+			, location_id	locationId
+			, create_date	createDate
+		FROM 
+			METER
+		ORDER BY
+			location_id, meter_id ASC
+	</select>
+</sqlMap>

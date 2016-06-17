@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	<typeAlias alias="location" type="com.pcm.dao.Location" />
+	
+	<!-- Perform Insert Operation -->
+	<insert id="insertLocation" parameterClass="location">
+		INSERT INTO
+			LOCATION
+				( location_id
+				, zip_code
+				, create_date )
+			VALUES
+				( #locationId#
+				, #zipCode#
+				, NOW() )
+	</insert>
+
+	<!-- Perform Read Operation -->
+	<select id="getLocationByZipCode" parameterClass="String" resultClass="location">
+		SELECT 
+			location_id		locationId
+			, zip_code		zipCode
+			, create_date	createDate
+		FROM 
+			LOCATION
+		WHERE
+			zip_code = #zipCode#
+	</select>
+	
+	<!-- Perform Read Operation -->
+	<select id="getAllLocation" resultClass="location">
+		SELECT 
+			location_id		locationId
+			, zip_code		zipCode
+			, create_date	createDate
+		FROM 
+			LOCATION
+	</select>
+</sqlMap>
