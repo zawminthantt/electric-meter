@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	<typeAlias alias="meterData" type="com.pcm.dao.MeterData" />
+	
+	<!-- Perform Insert Operation -->
+	<insert id="insertMeterData" parameterClass="meterData">
+		INSERT INTO
+			METER_DATA
+				( meter_id
+				, location_id
+				, mpower
+				, mdatetime
+				, current
+				, frequency
+				, voltage
+				, breaker_state
+				, create_date )
+			VALUES
+				( 
+				#meterId#
+				, #locationId#
+				, #mpower#
+				, #mdatetime#
+				, #current#
+				, #frequency#
+				, #voltage#
+				, #breakerState#
+				, NOW() )
+	</insert>
+
+	<!-- Perform Read Operation -->
+	<select id="getLatestMeterDataById" parameterClass="meterData" resultClass="meterData">
+		SELECT 
+			id				id
+			, meter_id		meterId
+			, location_id	locationId
+			, mpower			mpower
+			, mdatetime		mdatetime
+			, current		current
+			, frequency		frequency
+			, voltage		voltage
+			, breaker_state	breakerState
+			, create_date	createDate
+		FROM 
+			METER_DATA
+		WHERE
+			meter_id = #meterId#
+			AND
+			location_id = #locationId#
+		ORDER BY
+			mdatetime
+		LIMIT 1
+	</select>
+	<select id="searchMeterDataHistoryById" parameterClass="meterData" resultClass="meterData">
+		<![CDATA[
+			SELECT 
+				id				id
+				, meter_id		meterId
+				, location_id	locationId
+				, mpower			mpower
+				, mdatetime		mdatetime
+				, current		current
+				, frequency		frequency
+				, voltage		voltage
+				, breaker_state	breakerState
+				, create_date	createDate
+			FROM 
+				METER_DATA
+			WHERE
+				meter_id = #meterId#
+				AND
+				location_id = #locationId#
+				AND
+				mdatetime >= #from#
+				AND
+				mdatetime <= #to#
+			ORDER BY
+				mdatetime
+		]]>
+	</select>
+</sqlMap>
